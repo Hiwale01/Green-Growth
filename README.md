@@ -1,7 +1,8 @@
 
 # 🌿 Green Growth – Plant Disease Detection using Deep Learning
 
-![Green Growth Banner](https://your-image-url.com/banner.jpg)
+![Green Growth Banner](https://raw.githubusercontent.com/Hiwale01/Green-Growth/refs/heads/main/Screenshot%202025-06-01%20163748.png)
+
 
 Welcome to **Green Growth** — an AI-powered solution for detecting plant diseases using deep learning and image classification. This project aims to empower farmers, agriculturists, and plant lovers with a smart, fast, and accurate way to diagnose plant diseases just by uploading a photo.
 
@@ -26,16 +27,14 @@ This system uses a Convolutional Neural Network (CNN) trained on a dataset of pl
 ## 🧪 Sample Results
 
 ### 🖼️ Input Image
-![Sample Leaf](https://your-image-url.com/sample-leaf.jpg) <!-- Replace with actual image -->
+
+![Sample Leaf](https://raw.githubusercontent.com/Hiwale01/Green-Growth/main/Screenshot%202025-06-01%20163838.png)
+
 
 ### ✅ Model Output
 - **Predicted Class:** Tomato - Late Blight
 - **Confidence Score:** 97.65%
 
-### 📉 Confusion Matrix
-![Confusion Matrix](https://your-image-url.com/confusion-matrix.jpg)
-
----
 
 ## 🧠 Model Architecture
 
@@ -50,19 +49,6 @@ Model: "sequential"
 
 ---
 
-# Layer (type)                 Output Shape              Param \#
-
-conv2d (Conv2D)              (None, 128, 128, 32)      896
-...
-dense (Dense)                (None, 15)                1230
-===========================================================
-
-Total params: 1,235,000
-Trainable params: 1,235,000
-
-````
-
----
 
 ## 🧰 Tech Stack
 
@@ -119,9 +105,9 @@ Open `PlantDiseaseDetection.ipynb` and run all cells.
 
 ## 📸 Screenshots
 
-| Input                                               | Prediction                                       |
-| --------------------------------------------------- | ------------------------------------------------ |
-| ![Input Leaf](https://your-image-url.com/input.jpg) | ![Output](https://your-image-url.com/output.jpg) |
+| Input                                                                                             | Prediction                                                                                         |
+| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| ![Input Leaf](https://raw.githubusercontent.com/Hiwale01/Green-Growth/main/Screenshot%202025-06-01%20163838.png) | ![Prediction Output](https://raw.githubusercontent.com/Hiwale01/Green-Growth/main/Screenshot%202025-06-01%20163852.png) |
 
 ---
 
