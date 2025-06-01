@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+
+        <div class="result-container">
+            <!-- Left Side: Image -->
+            <div class="left">
+                <h3>Uploaded Image</h3>
+                <img src="{{ image_path }}" alt="Uploaded Image" class="uploaded-img">
+            </div>
+
+            <!-- Right Side: Disease Information -->
+            <div class="right">
+                <h2>Disease Detected: <span>{{ disease }}</span></h2>
+
+                {% if no_data %}
+                    <p>No additional information available for this disease.</p>
+                {% else %}
+                    <h3>Supplement Information</h3>
+                    <div class="supplement">
+                        <img src="{{ supplement_image }}" alt="Supplement Image" class="supplement-img">
+                        <div class="buy-button">
+                            <a href="{{ buy_link }}" target="_blank">Buy Here</a>
+                        </div>
+                    </div>
+
+                    <h3>Description</h3>
+                    <p>{{ description }}</p>
+
+                    <h3>Possible Steps</h3>
+                    <p>{{ possible_steps }}</p>
+
+                    <h3>Reference Image</h3>
+                    <img src="{{ disease_reference_image }}" alt="Disease Reference" class="reference-img">
+                {% endif %}
+            </div>
+        </div>
+
+        <a href="/" class="back-btn">Go Back</a>
+    </div>
+</body>
+</html>
